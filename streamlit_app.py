@@ -22,11 +22,11 @@ fig=px.scatter(df,x=x_var,y=y_var)
 st.plotly_chart(fig)
 
 #Dataframe
-st.write("### This is the data")
+st.write("### DATA")
 st.dataframe(df)
 
 #Show Map
-st.title("I'm the map!!!")
+st.title("MAP")
 fig=px.scatter_mapbox(df,lat='latitude',lon='longitude',size='newspaper',
                       hover_name='City',color='sales',
                       color_continuous_scale=px.colors.sequential.Viridis)
